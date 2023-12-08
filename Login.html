@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Pharmacy</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("form").submit(function(e){
+                e.preventDefault(); // Prevent the default form submission
+
+                var firstName = $("#fname").val();
+                var lastName = $("#lname").val();
+                var email = $("#yname").val();
+
+                alert("Form submitted!\n\nName: " + firstName + "\nNo IC: " + lastName + "\nEmail: " + email);
+
+                // You can add more logic here, like sending the form data to a server.
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <marquee direction="right">
+                <h1><b><center><p style="color:lightgrey;font-family:goudy stout;">+ Health Pharmacy +</p></center></b></h1>
+            </marquee>
+        </div>
+        <div id="content">
+            <h2><ins><center><p style="font-family:forte;">Modern Medical Store</p></center></h2></ins>
+        </div>
+        <div id="nav">
+            <h1>
+                <ul>
+                    <li><a class="selected" href="index.html">Home</a></li>
+                    <li><a class="selected" href="about us.html">About Us</a></li>
+                    <li><a class="selected" href="product.html">Product</a></li>
+                    <li><a class="selected" href="service.html">Services</a></li>
+                    <li><a class="selected" href="login.html">Login</a></li>
+                </ul>
+            </h1>
+        </div>
+        <div id="img1">
+            <form>
+                <div id="fname">
+                    <label for="fname">Nama</label>
+                    <input type="text" id="fname" name="fname">
+                </div> 
+                <div id="lname"> 
+                    <label for="lname">No IC</label>
+                    <input type="text" id="lname" name="lname">
+                </div> 
+                <div id="yname"> 
+                    <label for="yname">Email</label>
+                    <input type="text" id="yname" name="yname">
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

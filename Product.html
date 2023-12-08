@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Pharmacy</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".button3").click(function(){
+                buyNow('VitaHealth Lac-Ease');
+            });
+
+            $(".button4").click(function(){
+                buyNow('ZANIDIP');
+            });
+        });
+
+        function buyNow(productName) {
+            alert("You clicked 'BUY NOW' for " + productName);
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <marquee direction="right">
+                <h1><b><center><p style="color:lightgrey;font-family:goudy stout;">+ Health Pharmacy +</p></center></b></h1>
+            </marquee>
+        </div>
+        <div id="content">
+            <h2><ins><center><p style="font-family:forte;">Modern Medical Store</p></center></h2></ins>
+        </div>
+        <div id="nav">
+            <h1>
+                <ul>
+                    <li><a class="selected" href="index.html">Home</a></li>
+                    <li><a class="selected" href="about us.html">About Us</a></li>
+                    <li><a class="selected" href="product.html">Product</a></li>
+                    <li><a class="selected" href="service.html">Services</a></li>
+                    <li><a class="selected" href="login.html">Login</a></li>
+                </ul>
+            </h1>
+        </div>
+
+        <div class="img3">
+            <img src="product1.jpg" alt="Avatar" style="width:50%">
+            <div class="container">
+                <h2><b>ORGANIC SUPPLEMENTS</b></h2>
+                <p>VitaHealth Lac-Ease is a postpartum nutrition specifically designed to support women’s health and well-being after giving birth.</p>
+                <div id="button3">
+                    <h4><b><right><button class="button3">BUY NOW</button></right></b></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="img4">
+            <img src="product2.jpg" alt="Avatar" style="width:50%">
+            <div class="container">
+                <h2><b>ORGANIC SUPPLEMENTS</b></h2>
+                <p>ZANIDIP contains the active ingredient lercanidipine hydrochloride. ZANIDIP is used to lower high blood pressure, which doctors call hypertension.</p>
+                <div id="button4">
+                    <h4><b><right><button class="button4">BUY NOW</button></right></b></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="vid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0hTnUEAXefQ?si=TQv55LsqvTloPOpm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="container">
+                <h2><b>VITAMINS ADVANTAGES</b></h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

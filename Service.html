@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Health Pharmacy</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#service").change(function(){
+        var selectedService = $(this).val();
+        alert("You selected: " + selectedService);
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <marquee direction="right">
+        <h1><b><center><P style="color:lightgrey;font-family:goudy stout;">+ Health Pharmacy +</P></center></b></h1>
+      </marquee>
+    </div>
+    <div id="content">
+      <h2><ins><P style="font-family:forte;">Modern Medical Store</P></h2></ins>
+    </div>
+    <div id="nav">
+      <h1>
+        <ul>
+          <li><a class="selected" href="index.html">Home</a></li>
+          <li><a class="selected" href="about us.html">About Us</a></li>
+          <li><a class="selected" href="product.html">Product</a></li>
+          <li><a class="selected" href="service.html">Services</a></li>
+          <li><a class="selected" href="login.html">Login</a></li>
+        </ul>
+      </h1>
+    </div>
+    <label for="service">Our Services:</label>
+    <select id="service">
+      <option value="prescription filling">Prescription Filling</option>
+      <option value="health consultation">Health Consultation</option>
+      <option value="health products">Health Products</option>
+    </select>
+  </div>
+  <div id="img2">
+  </div>
+</body>
+</html>
